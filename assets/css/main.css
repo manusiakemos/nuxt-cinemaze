@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Merriweather:ital,wght@0,400;0,700;1,700&family=Righteous&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.heading{
+  @apply text-center md:text-left capitalize tracking-wide font-sans text-gray-100 text-2xl font-bold
+}
+
+
+.nuxt-link-exact-active {
+  @apply text-primary-500 hover:text-primary-400 font-bold
+}
+
+.page-container {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
